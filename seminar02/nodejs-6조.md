@@ -8,6 +8,14 @@
 
 # Node.js 정의
 
+NodeJS는 구글 크롬의 V8 Engine에 기반해 만들어진 서버 사이드 플랫폼이다.
+이전까지 JS는 프론트언어로 인식되어왔지만 node의 등장으로 JS언어로 서버 사이드 개발이 가능해졌다.  
+
+현재 최신 버전은 13.0.1까지 나왔으며 LTS버전은 12.13.0이다.
+12버전 들어서면서 ES6모듈을 지원하면서 import, export, private class fields 등등 사용가능해졌다. (이제 babel을 없이 사용가능)
+다시 본론으로 돌아와 많은 사람들이 node가 웹서버라고 생각을 하지만 node는 웹서버가 아니다.
+node.js는 그저 코드를 실행할 수 있는 비동기 **event-driven** Javascript 런타임이다.
+
 [목록으로](#INDEX)
 
 # Node.js 특징
@@ -81,7 +89,7 @@ https://epdl-studio.tistory.com/76
 # 참가자
 1. 박형모
 2. 양시연
-3. 
+3. 이재현
 4. 
 5. 
 6. 
