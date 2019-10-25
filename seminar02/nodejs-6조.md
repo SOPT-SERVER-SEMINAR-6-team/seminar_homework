@@ -16,6 +16,7 @@ NodeJS는 구글 크롬의 V8 Engine에 기반해 만들어진 서버 사이드 
 다시 본론으로 돌아와 많은 사람들이 node가 웹서버라고 생각을 하지만 node는 웹서버가 아니다.
 node.js는 그저 코드를 실행할 수 있는 비동기 **event-driven** Javascript 런타임이다.
 
+Java 언어가 모든 OS 운영체제에서 Virtual Machine 환경 안에서 Runtime 이 구동 되듯이 Node.JS 는 웹브라우저에 종속적인 자바스크립트에서 외부에서 실행할 수 있는 Runtime 환경을 Chrome V8 엔진을 제공하여 여러 OS 환경에서 실행할 수 있는 환경을 제공하게 된다. 이것을 Node.JS 라고 정의할 수 있다.
 [목록으로](#INDEX)
 
 # Node.js 특징
@@ -98,7 +99,7 @@ https://epdl-studio.tistory.com/76
 2. 양시연
 3. 이재현
 4. 심다은 
-5. 
+5. 현주희
 6. 
 7. 
 8. 
