@@ -100,7 +100,7 @@ https://epdl-studio.tistory.com/76
 3. 이재현
 4. 심다은 
 5. 현주희
-6. 
+6. 최소영
 7. 
 8. 
 
