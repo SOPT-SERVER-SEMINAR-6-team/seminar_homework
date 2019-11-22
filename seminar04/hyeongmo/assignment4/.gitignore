@@ -5,6 +5,11 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# config파일의 키값을 추가한 다음에는 아래 주석을 풀어주세요!!
+config
+config/dbConfig.js
+
+
 # Runtime data
 pids
 *.pid
@@ -35,8 +40,6 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-config/
-package-lock.json
 
 # TypeScript v1 declaration files
 typings/

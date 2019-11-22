@@ -5,13 +5,12 @@ const authUtil = {
             message: message,
             data: data
         }
-    }, 
+    },
     successFalse: (message) => {
         return {
             success: false,
             message: message
-        } 
+        }
     },
 }
 module.exports = authUtil
-

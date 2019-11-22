@@ -22,5 +22,9 @@ module.exports = {
     NO_USER: "존재하지 않는 유저 입니다.",
     NO_BOARD: "존재하는 게시글 입니다.",
     MISS_MATCH_PW: "비밀번호가 일치하지 않습니다",
-    INTERNAL_SERVER_ERROR: "서버 내부 오류"
+    INTERNAL_SERVER_ERROR: "서버 내부 오류",
+    EXPIRED_TOKEN: "만료된 토큰",
+    INVALID_TOKEN: "잘못된 형식의 토큰입니다.",
+    EMPTY_TOKEN: "토큰값이 존재하지 않습니다."
+   
 }

@@ -1,4 +1,4 @@
-const authUtil = require('../modules/authUtil');
+const authUtil = require('../modules/utils');
 const statusCode = require('../modules/statusCode');
 const responseMessage = require('../modules/responseMessage');
 
@@ -6,11 +6,11 @@ const pool = require('../modules/db/pool');
 const table = 'Blog';
 
 module.exports = {
-    create : async(name)=>{
-        const field = 'name';
-        const questions = '?';
+    create : async({name,img})=>{
+        const field = 'name, img';
+        const questions = '?,?';
         const query = `INSERT INTO ${table} (${field}) VALUES(${questions})`;
-        const values = [name];
+        const values = [name,img];
         const result = await pool.queryParam_Parse(query,values);
 
         if(!result){
@@ -55,8 +55,8 @@ module.exports = {
             json : authUtil.successTrue(responseMessage.BOARD_READ_SUCCESS, result)
         };
     },
-    update : async(blogIdx, name)=>{
-        const query = `UPDATE ${table} SET name='${name}' WHERE blogIdx = '${blogIdx}'`;
+    update : async({blogIdx, name, img})=>{
+        const query = `UPDATE ${table} SET name='${name}', img='${img}' WHERE blogIdx = '${blogIdx}'`;
         const result = await pool.queryParam_None(query);
 
         if(!result){
