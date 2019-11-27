@@ -8,7 +8,9 @@ yarn-error.log*
 # config파일의 키값을 추가한 다음에는 아래 주석을 풀어주세요!!
 config
 config/dbConfig.js
-
+config/awsconfig.json
+config/secretKey.js
+config/multer.js
 
 # Runtime data
 pids
