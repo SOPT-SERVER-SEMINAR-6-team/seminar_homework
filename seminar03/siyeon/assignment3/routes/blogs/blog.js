@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router({mergeParams: true});
-const Blog = require('../model/Blog');
+const Blog = require('../../model/Blog');
 
-const statusCode = require('../module/statusCode');
-const responseMessage = require('../module/responseMessage');
-const authUtil = require('../module/authUtil');
+const statusCode = require('../../module/statusCode');
+const responseMessage = require('../../module/responseMessage');
+const authUtil = require('../../module/authUtil');
 
 // 블로그 가져오기
 router.get('/', (req, res) => {
@@ -17,8 +17,8 @@ router.get('/', (req, res) => {
     });
 })
 
-router.get('/:idx', (req, res) => {
-    const idx = req.params.idx;
+router.get('/:blogIdx', (req, res) => {
+    const idx = req.params.blogIdx;
     if(!idx){
         res.status(statusCode.BAD_REQUEST)
         .send(authUtil.successFalse(responseMessage.NULL_VALUE));
@@ -56,8 +56,8 @@ router.post('/', (req, res)=>{
 })
 
 // 블로그 수정
-router.put('/:idx', (req, res)=>{
-    const idx = req.params.idx;
+router.put('/:blogIdx', (req, res)=>{
+    const idx = req.params.blogIdx;
     const {
         name,
         owner
@@ -79,8 +79,8 @@ router.put('/:idx', (req, res)=>{
 })
 
 // 블로그 삭제
-router.delete('/:idx', (req, res)=>{
-    const idx = req.params.idx;
+router.delete('/:blogIdx', (req, res)=>{
+    const idx = req.params.blogIdx;
     const {
         owner
     } = req.body;
