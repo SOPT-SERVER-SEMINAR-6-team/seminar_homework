@@ -6,6 +6,7 @@ const responseMessage = require('../../module/responseMessage.js');
 const Article = require('../../model/article');
 
 /* GET users listing. */
+router.use('/:articleIdx/comments', require('./comments/comments'));
 router.get('/', async function(req, res) {
     const {blogIdx} = req.params;
     if(!blogIdx) res.status(statusCode.BAD_REQUEST).send(authUtil.successFalse(responseMessage.NULL_VALUE));
