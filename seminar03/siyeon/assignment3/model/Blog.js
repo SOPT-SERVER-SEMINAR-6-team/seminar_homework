@@ -3,9 +3,11 @@ const responseMessage = require('../module/responseMessage');
 const authUtil = require('../module/authUtil');
 
 const blogsDB = [{
+    blogIdx: 0,
     name: '첫번째 블로그',
     owner: '주인장1'
 },{
+    blogIdx: 1,
     name: '두번째 블로그',
     owner: '주인장2'
 }]
@@ -23,6 +25,7 @@ const blog = {
                 return;
             }
             const blog = blogsDB.push({
+                blogIdx : blogsDB.length ,
                 name,
                 owner
             });
@@ -116,4 +119,4 @@ const blog = {
     }
 }
 
-module.exports = blog
+module.exports = blog;

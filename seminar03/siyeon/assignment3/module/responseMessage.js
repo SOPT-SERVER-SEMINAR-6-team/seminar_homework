@@ -10,5 +10,12 @@ module.exports = {
     NOT_BLOG_OWNER: "블로그의 주인이 아닙니다.",
     DELETE_BLOG_SUCCESS: "블로그 삭제 성공",
 
-    ALREADY_EXISTENCE_NAME: "이미 존재하는 블로그 이름입니다."
+    CREATE_ARTICLE_SUCCESS: "게시글 생성 성공",
+    READ_ARTICLE_SUCCESS: "게시글 조회 성공",
+    UPDATE_ARTICLE_SUCCESS: "게시글 업데이트 성공",
+    DELETE_ARTICLE_SUCCESS: "게시글 삭제 성공",
+
+    ALREADY_EXISTENCE_NAME: "이미 존재하는 블로그 이름입니다.",
+    TITLE_LENGTH_OVER: "게시글의 제목은 10자를 넘을 수 없습니다.",
+    NO_ARTICLE: "게시글이 존재하지 않습니다."
 }
